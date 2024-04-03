@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> О нас </title>
+    <meta charset="UTF-8">
+    <meta name="viewsport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title> О нас </title>
+    <script>
+        window.addEventListener("load", () => {
+            const loader = document.querySelector(".loader");
+            
+            document.querySelector(".loader").classList.add("loader--hidden");
+            
+            document.QuerySelector(".loader").addEventListener("transitionend", () => {
+                document.body.removeChild(document.querySelector("loader"));
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h2 class ="logo"> cO7working </h2>
+        <nav class="navigation">
+            <a href="base.html"> Бронь </a>
+            <a href="about.html"> О нас </a>
+            <a href="contacts.html"> Обратная связь</a>
+            <button class="btnLogin" onclick="document.location='login.html'"> Войти </button>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <div class="card">
+                <div class="content">
+                    <div class="imgBx"><img src="igor.jpg" width="120" height="120"></div>
+                    <div class="contentBx">
+                        <h3>    Игорь Поляков </h3>
+                        <span>      Тимлид </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="content">
+                    <div class="imgBx"><img src="yarik.jpg" width="120" height="120"></div>
+                    <div class="contentBx">
+                        <h3>    Ярослав Максин </h3>
+                        <span>      Frontend-разработчик </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="content">
+                    <div class="imgBx"><img src="vadim.jpg" width="120" height="120"></div>
+                    <div class="contentBx">
+                        <h3>    Вадим Захаров </h3>
+                        <span>      Тестировщик </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

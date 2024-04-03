@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Бронь </title>
+    <meta charset="UTF-8">
+    <meta name="viewsport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
+    <title> c07working </title>
+    <script>
+        window.addEventListener("load", () => {
+            const loader = document.querySelector(".loader");
+            
+            document.querySelector(".loader").classList.add("loader--hidden");
+            
+            document.QuerySelector(".loader").addEventListener("transitionend", () => {
+                document.body.removeChild(document.querySelector("loader"));
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h2 class ="logo"> cO7working </h2>
+        <nav class="navigation">
+            <a href="base.html"> Бронь </a>
+            <a href="about.html"> О нас </a>
+            <a href="contacts.html"> Обратная связь</a>
+            <button class="btnLogin" onclick="document.location='login.html'"> Войти </button>
+        </nav>
+    </header>
+    <div class="loader"></div>
+</body>
+</html>
